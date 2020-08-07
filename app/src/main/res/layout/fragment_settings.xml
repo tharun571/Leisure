@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings"
+    android:background="@drawable/bg">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content"
+        android:text="Dark Mode"
+        android:textSize="20sp"
+        android:fontFamily="@font/prodreg"
+        android:visibility="gone"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/button"
+            android:id="@+id/add"
+            android:textSize="20sp"
+            android:text="Add places?"
+            android:fontFamily="@font/prodreg"
+            android:layout_above="@id/logout"
+            />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/button"
+        android:id="@+id/logout"
+        android:textSize="20sp"
+        android:text="Logout"
+        android:fontFamily="@font/prodreg"
+        android:layout_alignParentBottom="true"
+        />
+
+    </RelativeLayout>
+</FrameLayout>

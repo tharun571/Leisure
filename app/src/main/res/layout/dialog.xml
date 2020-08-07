@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+
+   <com.airbnb.lottie.LottieAnimationView
+       android:layout_width="128dp"
+       android:layout_height="128dp"
+       android:scaleType="fitXY"
+     android:layout_gravity="center_horizontal"
+       app:lottie_rawRes="@raw/mapmaker"
+       app:lottie_autoPlay="true"
+       app:lottie_loop="true"
+       android:id="@+id/progressBar"
+
+
+       />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Making Your Day..."
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp"
+        android:fontFamily="@font/prodital"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/mainFrag">
+
+    <fragment
+        android:id="@+id/mainFrag"
+        android:name="com.example.leisure.MainFrag"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFrag_to_favourites"
+            app:destination="@id/favourites" />
+        <action
+            android:id="@+id/action_mainFrag_to_settings"
+            app:destination="@id/settings" />
+        <action
+            android:id="@+id/action_mainFrag_to_list"
+            app:destination="@id/list" />
+    </fragment>
+    <fragment
+        android:id="@+id/favourites"
+        android:name="com.example.leisure.Favourites"
+        android:label="fragment_favourites"
+        tools:layout="@layout/fragment_favourites" >
+        <action
+            android:id="@+id/action_favourites_to_mainFrag"
+            app:destination="@id/mainFrag" />
+        <action
+            android:id="@+id/action_favourites_to_settings"
+            app:destination="@id/settings" />
+    </fragment>
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.example.leisure.Settings"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settings_to_mainFrag"
+            app:destination="@id/mainFrag" />
+        <action
+            android:id="@+id/action_settings_to_favourites"
+            app:destination="@id/favourites" />
+        <action
+            android:id="@+id/action_settings_to_explore"
+            app:destination="@id/explore" />
+    </fragment>
+    <fragment
+        android:id="@+id/explore"
+        android:name="com.example.leisure.Explore"
+        android:label="fragment_explore"
+        tools:layout="@layout/fragment_explore" >
+        <action
+            android:id="@+id/action_explore_to_settings"
+            app:destination="@id/settings" />
+        <action
+            android:id="@+id/action_explore_to_favourites"
+            app:destination="@id/favourites" />
+        <action
+            android:id="@+id/action_explore_to_mainFrag"
+            app:destination="@id/mainFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/list"
+        android:name="com.example.leisure.List"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_list_to_mainFrag"
+            app:destination="@id/mainFrag" />
+        <action
+            android:id="@+id/action_list_to_mainFrag2"
+            app:destination="@id/mainFrag" />
+        <action
+            android:id="@+id/action_list_to_favourites"
+            app:destination="@id/favourites" />
+        <action
+            android:id="@+id/action_list_to_settings"
+            app:destination="@id/settings" />
+    </fragment>
+</navigation>

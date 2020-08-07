@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_horizontal"
+            app:lottie_rawRes="@raw/add"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_margin="16dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Places"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/prodbold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="Feeling the information is limited?"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            android:fontFamily="@font/prodreg"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="You can suggest places to us and"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            android:fontFamily="@font/prodreg"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="we will verify and add them into the app"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            android:fontFamily="@font/prodreg"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+</RelativeLayout>

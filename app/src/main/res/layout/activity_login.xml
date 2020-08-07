@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/transpbg"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            >
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/loc"
+                android:layout_marginBottom="16dp"
+                android:id="@+id/name_image"
+                android:transitionName="leisure_image"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="L E I S U R E "
+        android:textSize="36sp"
+        android:fontFamily="@font/leoscar"
+
+        android:id="@+id/name"
+        android:gravity="center"
+        android:textColor="#000"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:drawableLeft="@drawable/person"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:inputType="textEmailAddress"
+        android:layout_marginHorizontal="8dp"
+        android:hint="Emai ID"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="24dp"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        android:layout_marginHorizontal="8dp"
+        android:drawableLeft="@drawable/lock"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_gravity="center_horizontal"
+        android:inputType="textPassword" />
+
+
+            <CheckBox
+                android:layout_marginTop="8dp"
+                android:layout_width="128dp"
+                android:textSize="12sp"
+                android:layout_marginHorizontal="8dp"
+                android:layout_height="wrap_content"
+                android:text="Remember me"
+                android:id="@+id/saveLoginCheckBox"
+                android:layout_gravity="right"
+                />
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Login"
+
+        android:layout_marginHorizontal="8dp"
+        android:textSize="24sp"
+        android:id="@+id/login"
+        android:fontFamily="@font/prodreg"
+        android:background="@drawable/button"/>
+
+
+
+
+    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginHorizontal="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot password?"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/forgot"
+                    android:textColor="#0000ff"
+                    android:layout_gravity="left"
+                    android:fontFamily="@font/prodreg"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Don't have an account?"
+
+                    android:textColor="#0000ff"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/prodreg"
+                    android:id="@+id/register"
+                    android:transitionName="button"
+                    />
+                </LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

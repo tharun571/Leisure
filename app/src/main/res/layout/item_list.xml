@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="6dp"
+    android:background="@drawable/transpbg"
+    app:cardElevation="6dp"
+    android:animateLayoutChanges="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fc9d9d">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+     <ImageView
+         android:layout_width="72dp"
+         android:layout_height="72dp"
+         android:layout_marginVertical="16dp"
+         android:layout_marginLeft="16dp"
+         android:scaleType="fitXY"
+         android:src="@drawable/park"
+         android:background="@drawable/border"
+         android:id="@+id/placeholder"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/prodreg"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#000"
+                    android:id="@+id/place"
+                    android:text="name"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/prodreg"
+                    android:layout_gravity="center_horizontal"
+                   android:layout_alignParentLeft="true"
+                    android:id="@+id/placeloc"
+                    android:text="name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/place"
+                    />
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/prodreg"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#000"
+                    android:id="@+id/price"
+                    android:text="name"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/prodreg"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentLeft="true"
+
+                    android:text="Price"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/price"
+                    />
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/prodreg"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#000"
+                    android:id="@+id/max1"
+                    android:text="name"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/prodreg"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentLeft="true"
+
+                    android:text="Maximum People"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/max1"
+                    />
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/desc"
+            android:background="#1ADCDCDC"
+            android:padding="8dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Show location"
+                android:id="@+id/show"
+                android:fontFamily="@font/prodreg"
+
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Show other places in this location"
+                android:id="@+id/loccc"
+                android:fontFamily="@font/prodreg"
+
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
