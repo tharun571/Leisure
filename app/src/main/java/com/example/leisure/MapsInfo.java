@@ -44,6 +44,11 @@ public class MapsInfo extends Fragment implements OnMapReadyCallback {
         a=view.findViewById(R.id.showLoc);
         b=view.findViewById(R.id.showLocList);
 
+        name.setText(""+locationOfInfo.name);
+        location.setText(""+locationOfInfo.location);
+        price.setText(""+locationOfInfo.price);
+        max.setText(""+locationOfInfo.max);
+
         SupportMapFragment mapFragment= ((SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map_info));
         mapFragment.getMapAsync(this);
 
